@@ -26,7 +26,7 @@ header nav {
     height:30px;
     display: flex;
     justify-content: space-between;
-    align-items:flex-end
+    align-items:center
 }
 header nav .links-and-startIcon {
     flex-basis: 75%;
@@ -51,8 +51,18 @@ header nav .links-and-startIcon {
     font-size:0.9rem;
     cursor:pointer;
 }
+.links-and-startIcon .list li,
+.links-and-startIcon .list li a {
+    color:var(--main-blue-color);
+}
+.links-and-startIcon .list li a:hover {
+    color:var(--second-blue-color);
+}
 .links-and-startIcon .list li:hover {
     color:var(--second-blue-color);
+}
+.links-and-startIcon .list li a {
+    text-decoration: none;
 }
 header nav > img:last-child {
     cursor:pointer;
@@ -295,6 +305,7 @@ header nav > img:last-child {
 .three .cards > div img {
     width: 70px;
     transform: translateY(-50%);
+    border-radius:50%;
 }
 .three .cards > div h3 {
     color:var(--main-blue-color);
