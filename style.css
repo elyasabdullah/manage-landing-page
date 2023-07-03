@@ -430,13 +430,14 @@ header nav > img:last-child {
     font-size: 2rem;
     letter-spacing: 1.2px;
 }
-.five .boxes .box-1 .icons i {
+.five .boxes .box-1 .icons svg {
     margin-right:8px;
     cursor:pointer;
     transition:ease 0.3s;
-}
-.five .boxes .box-1 .icons i:hover {
     color: var(--main-orange-color);
+}
+.five .boxes .box-1 .icons svg:hover path {
+    fill: var(--main-orange-color);
 }
 .five .box-2 ul li {
     cursor:pointer;
